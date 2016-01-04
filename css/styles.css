@@ -1,0 +1,228 @@
+body.cube1 {
+		background: url(../images/circuitbg.jpg) no-repeat center center fixed;
+		background-color: black;
+	  	-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	  	font-family: 'Inconsolata';
+}
+
+#container {
+	font-family: 'Inconsolata';
+	font-weight: 400;
+	color: white;
+	text-shadow: 1px 1px 8px #15abd7;
+	letter-spacing: 4px;
+	height: 98vh;
+	position: fixed;
+	width: 600px;
+}
+
+.introcontainer {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 600px;
+	height: 750px;
+	z-index: 10;
+	-webkit-transition: all 1200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  	transition:         all 1200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#hello, #newuser, #secondscreen {
+	position: absolute;
+	top: 15%;
+	left: 15%;
+	display: inline;
+	font-size: 40px;
+	-webkit-transition: all 600ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  	transition:         all 600ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+#welcome {
+	display: inline-block;
+	position: absolute;
+	top: 23%;
+	left: 15%;
+	font-size: 40px;
+	-webkit-transition: all 600ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  	transition:         all 600ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+#under-cursor {
+    text-shadow: 1px 1px 5px #15abd7;
+    display: inline;
+    opacity: 1;
+    padding-left: 5px;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+canvas {
+	display: block;
+	opacity: .5;
+}
+
+.ac_overlay {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	background: transparent url(../images/pattern.png) repeat top left;
+}
+
+#typed-cursor {
+	display: none;
+}
+
+.experience, .signup {
+	padding: 12px 20px;
+	background-color: transparent;
+	display: inline-block;
+	border: 3px solid rgba(255,255,255,0.8);
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: 3px;
+	box-shadow: 0px 0px 20px #15abd7;
+}
+.signup {
+	font-size: 14px;
+}
+
+#bgbutton, #login {
+	position: absolute;
+	top: 33%;
+	left: 15%;
+	-webkit-transition: all 800ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  	transition:         all 800ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  	-moz-transition: 	all 800ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  	perspective: 500px;
+}
+
+#login {
+	top: 43%;
+}
+
+#bgbutton a {
+	-webkit-transition: all 800ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  	transition:         all 800ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+#bgbutton a:hover {
+	-webkit-transition: all 800ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  	transition:         all 800ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  	background-color: rgba(21,171,215,.7);
+  	border-radius: 15px;
+  	box-shadow: 0px 0px 10px #fff;
+  	text-shadow: 1px 1px 4px #000;
+  	transform: rotateZ(15deg);
+  	transform: rotateX(5deg);
+  	
+}
+
+#secondscreen {
+	position: absolute;
+	top: -55%;
+	left: -20%;
+	background-color: rgba(30,30,30,.6);
+	border: 0px ridge rgba(0,174,239,.6);
+	width: 0vw;
+	height: 0vh;
+	opacity: 0;
+	margin: 0 auto;
+	z-index: 2;
+	-webkit-transition: all 1200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  	transition:         all 1200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#secondintro {
+	position: absolute;
+	top: 3%;
+	left: 3%;
+	width: 98%;
+	letter-spacing: 1px;
+	line-height: 25px;
+	font-size: 25px;
+}
+
+@media screen and (min-width: 651px) {}
+@media screen and (min-width: 451px) and (max-width: 650px) {}
+@media screen and (max-width: 375px) {
+
+	#mobilecontainer {
+		width: 100vw;
+		height: 100vh;
+	}
+
+	#hello, #welcome {
+		width: 100%;
+		font-size: 33px;
+		top: 25%;
+		left: 0%;
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+	}
+
+	#hello {
+		width: 93%;
+	}
+
+	#welcome {
+		top: 35%;
+	}
+
+	#bgbutton {
+		top: 46%;
+		left: 15%;
+	}
+
+	#login {
+		top: 60%;
+		left: 15%;
+	}
+
+	.introcontainer {
+		width: 480px;
+		height: 650px;
+		top: -8%;
+		left: -8%;
+	}
+
+	#secondscreen {
+		width: 0vw;
+		height: 0vh;
+		
+	}
+
+	#secondintro {
+		font-size: 18px;
+		width: 100%;
+	}
+}

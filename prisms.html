@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=0" />
+  
+  <title>Prisms</title>
+  <link href="./css/menu.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="./css/prisms.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400, 700' rel='stylesheet' type='text/css'>
+  <script src="js/jquery.min.js"></script>
+  <script src="./js/utils.js"></script>
+  <script src="./js/rotate.js"></script>
+  </div>
+
+</head>
+    <body>
+    <!--<video autoplay loop poster="images/circuitbg.jpg" id="bgvid">
+        <source src="images/1.webm" type="video/webm">
+        <source src="images/1.mp4" type="video/mp4">
+    </video>-->
+        <div class="wrap">
+            <div class="container">
+                <div id="box" class="show-front" >
+                    <figure class="front">
+
+                        <div class="navbar_left">
+                            <a class="menu" href="#"><i class="icon-align-justify"></i></a>
+                                <a class="show-left" id="link_left" href="#">
+                                <span class="active_left"><span class="valign"><span class="vertical">Left</span></span></span>
+                                <span class="hover_left"><span class="valign"><span class="vertical">Left</span></span></span>
+                            </a>
+
+                        </div>
+
+                        <div class="navbar_right">
+                            <a class="menu" href="#"><i class="icon-align-justify"></i></a>
+                            <a class="show-right" id="link_right" href="#">
+                                <span class="active_right"><span class="valign"><span class="vertical">Right</span></span></span>
+                                <span class="hover_right"><span class="valign"><span class="vertical">Right</span></span></span>
+                            </a>
+                        </div>
+
+                        <div class="navbar_top">
+                            <a class="show-top" id="link_top" href="#">
+                                <span class="active_top"><span class="valign"><span class="horizontal">Top</span></span></span>
+                                <span class="hover_top"><span class="valign"><span class="horizontal">Top</span></span></span>
+                            </a>
+                        </div>
+
+                        <div class="navbar_bottom">
+                            <a class="show-bottom" id="link_bottom" href="#">
+                                <span class="active_bottom"><span class="valign"><span class="horizontal">Bottom</span></span></span>
+                                <span class="hover_bottom"><span class="valign"><span class="horizontal">Bottom</span></span></span>
+                            </a>
+                        </div>
+
+                    </figure>
+
+      
+                    <figure class="back">
+
+                        <div class="navbar_left">
+                            <a class="menu" href="#"><i class="icon-align-justify"></i></a>
+                                <a class="show-left" id="link_left" href="#">
+                                <span class="active_left"><span class="valign"><span class="vertical">Left</span></span></span>
+                                <span class="hover_left"><span class="valign"><span class="vertical">Left</span></span></span>
+                            </a>
+
+                        </div>
+
+                        <div class="navbar_right">
+                            <a class="menu" href="#"><i class="icon-align-justify"></i></a>
+                            <a class="show-right" id="link_right" href="#">
+                                <span class="active_right"><span class="valign"><span class="vertical">Right</span></span></span>
+                                <span class="hover_right"><span class="valign"><span class="vertical">Right</span></span></span>
+                            </a>
+                        </div>
+
+                        <div class="navbar_top">
+                            <a class="show-bottom" id="link_top" href="#">
+                                <span class="active_top"><span class="valign"><span class="horizontal">Bottom</span></span></span>
+                                <span class="hover_top"><span class="valign"><span class="horizontal">Bottom</span></span></span>
+                            </a>
+                        </div>
+
+                        <div class="navbar_bottom">
+                            <a class="show-top" id="link_bottom" href="#">
+                                <span class="active_bottom"><span class="valign"><span class="horizontal">Top</span></span></span>
+                                <span class="hover_bottom"><span class="valign"><span class="horizontal">Top</span></span></span>
+                            </a>
+                        </div>
+                        
+                    </figure>
+  
+                    <figure class="left">
+
+                        <div class="navbar_left">
+                            <a class="menu" href="#"><i class="icon-align-justify"></i></a>
+                                <a class="show-back" id="link_left" href="#">
+                                <span class="active_left"><span class="valign"><span class="vertical">Back</span></span></span>
+                                <span class="hover_left"><span class="valign"><span class="vertical">Back</span></span></span>
+                            </a>
+
+                        </div>
+
+                        <div class="navbar_right">
+                            <a class="menu" href="#"><i class="icon-align-justify"></i></a>
+                            <a class="show-front" id="link_right" href="#">
+                                <span class="active_right"><span class="valign"><span class="vertical">Front</span></span></span>
+                                <span class="hover_right"><span class="valign"><span class="vertical">Front</span></span></span>
+                            </a>
+                        </div>
+
+                        <div class="navbar_top">
+                            <a class="show-top" id="link_top" href="#">
+                                <span class="active_top"><span class="valign"><span class="horizontal">Top</span></span></span>
+                                <span class="hover_top"><span class="valign"><span class="horizontal">Top</span></span></span>
+                            </a>
+                        </div>
+
+                        <div class="navbar_bottom">
+                            <a class="show-bottom" id="link_bottom" href="#">
+                                <span class="active_bottom"><span class="valign"><span class="horizontal">Bottom</span></span></span>
+                                <span class="hover_bottom"><span class="valign"><span class="horizontal">Bottom</span></span></span>
+                            </a>
+                        </div>
+  
+                    </figure>
+                    
+                    <figure class="right">
+
+                    <div class="navbar_left">
+                            <a class="menu" href="#"><i class="icon-align-justify"></i></a>
+                                <a class="show-front" id="link_left" href="#">
+                                <span class="active_left"><span class="valign"><span class="vertical">Front</span></span></span>
+                                <span class="hover_left"><span class="valign"><span class="vertical">Front</span></span></span>
+                            </a>
+
+                        </div>
+
+                        <div class="navbar_right">
+                            <a class="menu" href="#"><i class="icon-align-justify"></i></a>
+                            <a class="show-back" id="link_right" href="#">
+                                <span class="active_right"><span class="valign"><span class="vertical">Back</span></span></span>
+                                <span class="hover_right"><span class="valign"><span class="vertical">Back</span></span></span>
+                            </a>
+                        </div>
+
+                        <div class="navbar_top">
+                            <a class="show-top" id="link_top" href="#">
+                                <span class="active_top"><span class="valign"><span class="horizontal">Top</span></span></span>
+                                <span class="hover_top"><span class="valign"><span class="horizontal">Top</span></span></span>
+                            </a>
+                        </div>
+
+                        <div class="navbar_bottom">
+                            <a class="show-bottom" id="link_bottom" href="#">
+                                <span class="active_bottom"><span class="valign"><span class="horizontal">Bottom</span></span></span>
+                                <span class="hover_bottom"><span class="valign"><span class="horizontal">Bottom</span></span></span>
+                            </a>
+                        </div>
+
+                    </figure>
+
+                    <figure class="top">
+
+                        <div class="navbar_left">
+                            <a class="menu" href="#"><i class="icon-align-justify"></i></a>
+                                <a class="show-left" id="link_left" href="#">
+                                <span class="active_left"><span class="valign"><span class="vertical">Left</span></span></span>
+                                <span class="hover_left"><span class="valign"><span class="vertical">Left</span></span></span>
+                            </a>
+
+                        </div>
+
+                        <div class="navbar_right">
+                            <a class="menu" href="#"><i class="icon-align-justify"></i></a>
+                            <a class="show-right" id="link_right" href="#">
+                                <span class="active_right"><span class="valign"><span class="vertical">Right</span></span></span>
+                                <span class="hover_right"><span class="valign"><span class="vertical">Right</span></span></span>
+                            </a>
+                        </div>
+
+                        <div class="navbar_top">
+                            <a class="show-back" id="link_top" href="#">
+                                <span class="active_top"><span class="valign"><span class="horizontal">Back</span></span></span>
+                                <span class="hover_top"><span class="valign"><span class="horizontal">Back</span></span></span>
+                            </a>
+                        </div>
+
+                        <div class="navbar_bottom">
+                            <a class="show-front" id="link_bottom" href="#">
+                                <span class="active_bottom"><span class="valign"><span class="horizontal">Front</span></span></span>
+                                <span class="hover_bottom"><span class="valign"><span class="horizontal">Front</span></span></span>
+                            </a>
+                        </div>
+                        
+                    </figure>
+                    
+                    <figure class="bottom">
+
+                        <div class="navbar_left">
+                                <a class="menu" href="#"><i class="icon-align-justify"></i></a>
+                                    <a class="show-left" id="link_left" href="#">
+                                    <span class="active_left"><span class="valign"><span class="vertical">Left</span></span></span>
+                                    <span class="hover_left"><span class="valign"><span class="vertical">Left</span></span></span>
+                                </a>
+
+                            </div>
+
+                            <div class="navbar_right">
+                                <a class="menu" href="#"><i class="icon-align-justify"></i></a>
+                                <a class="show-right" id="link_right" href="#">
+                                    <span class="active_right"><span class="valign"><span class="vertical">Right</span></span></span>
+                                    <span class="hover_right"><span class="valign"><span class="vertical">Right</span></span></span>
+                                </a>
+                            </div>
+
+                            <div class="navbar_top">
+                                <a class="show-front" id="link_top" href="#">
+                                    <span class="active_top"><span class="valign"><span class="horizontal">Front</span></span></span>
+                                    <span class="hover_top"><span class="valign"><span class="horizontal">Front</span></span></span>
+                                </a>
+                            </div>
+
+                            <div class="navbar_bottom">
+                                <a class="show-back" id="link_bottom" href="#">
+                                    <span class="active_bottom"><span class="valign"><span class="horizontal">Back</span></span></span>
+                                    <span class="hover_bottom"><span class="valign"><span class="horizontal">Back</span></span></span>
+                                </a>
+                            </div>
+      
+                    </figure>
+                </div>
+            </div>
+
+</body>
+</html>
